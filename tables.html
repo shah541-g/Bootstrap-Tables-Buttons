@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body class="bg-secondary">
+    <div class="container-fluid my-3 font-monospace">
+        <div class="display-2 bg-danger fw-bold text-white text-center">Tables</div>
+        <div class="row mx-3">
+            <div class="col-12 bg-light border border-2 border-black my-3">
+                <h2 class="p-3 fw-bold">
+                    Sections in a table:
+                </h2>
+                <ol class="ms-3">
+                    <li>
+                        Table head <code> &lt;&lt;thead&gt;&gt; </code>
+                        <ul>
+                
+                            <li>Table Row &nbsp;&nbsp;<code>&lt;tr&gt;</code></li>
+                            <li>Table Heading <code>&lt;th&gt;</code></li>
+                        </ul>
+                    </li>
+                    <li>Table body <code> &lt;body&gt; </code>
+                        <ul>
+                            <li>Table Row &nbsp;&nbsp;<code>&lt;tr&gt;</code></li>
+                            <li>Table Heading <code>&lt;th&gt;</code></li>
+                            <li>Table Data &nbsp;&nbsp;&nbsp;&nbsp;<code>&lt;td&gt;</code></li>
+                        </ul>
+                    </li>
+                </ol>
+            </div>
+            <div class="col-sm-6 bg-light border border-black border-2" >
+                <h4 class="p-3 fw-bold">
+                    Table Head <code>&lt;&lt;thead&gt;&gt;</code>:  
+                </h4>
+                <p class="lh-lg p-3">Such a section of table which contains all the variable attributes for which various possible outcomes are possible,<span class="fw-bold">e.g; for Name(Ahmad, Ali, etc)</span> is called <code class="fw-bold display-6">Table Head</code></p>
+                
+            </div>
+            <div class="col-sm-6 bg-light border border-black border-2">
+                <h4 class="p-3 fw-bold">Table Body <code>&lt;tbody&gt;</code>: </h4>
+                
+                <p class="lh-lg p-3">Such a section of table which contains different values for a single attribute,<span class="fw-bold">e.g; for Name(Ahmad, Ali, etc)</span> is called <code class="fw-bold display-6">Table Body. </code></p>
+
+               
+            
+            </div>
+            <div class="col sm 6 bg-light border border-black border-2">
+                <ol class="ms-3">
+                    <li>Table Row &nbsp;&nbsp;<code>&lt;tr&gt;</code>: <details class="click-me">
+                        <summary >check me</summary>
+                        Table Row or &nbsp;&nbsp;<code>&lt;tr&gt;</code> actually holds one or more cells of data &nbsp;&nbsp;&nbsp;&nbsp;<code>&lt;td&gt;</code> and headings <code>&lt;th&gt;</code>
+                    </details></li>
+                    <li>able Heading <code>&lt;th&gt;</code><details class="click-me">
+                        <summary >check me</summary>It is the heading of the row or column, most common example is <span class="fw-bold">serial number and attributes</span></details></li>
+                </ol>
+            </div>
+            <div class="col-sm-6 bg-light border border-black border-2"> 
+                <ol class="ms-3">
+                    <li>Table Row &nbsp;&nbsp;<code>&lt;tr&gt;</code>: <details class="click-me">
+                        <summary >check me</summary>
+                        Table Row or &nbsp;&nbsp;<code>&lt;tr&gt;</code> actually holds one or more cells of data &nbsp;&nbsp;&nbsp;&nbsp;<code>&lt;td&gt;</code> and headings <code>&lt;th&gt;</code>
+                    </details></li>
+                    <li>Table Heading <code>&lt;th&gt;</code><details class="click-me">
+                    <summary >check me</summary>It is the heading of the row or column, most common example is <span class="fw-bold">serial number and attributes</span></details></li>
+                    <li>
+                        Table Data &nbsp;&nbsp;&nbsp;&nbsp;<code>&lt;td&gt;</code><details class="click-me">
+                            <summary >check me</summary>It is the cell within a row, it holds the sample spaces for the attribute</details>
+                    </li>
+                </ol>
+            </div>
+            <div class="col-12 bg-light border border-black border-2">
+                <h3 class="p-3">Example Snippet:</h3>
+            </div>
+            <div class="col-12 bg-dark text-white border border-warning border-2">
+                
+                    <code>&lt;table <span class="text-warning">class="table"&gt;</span></code>
+                    <br>
+                        &nbsp;<code>&lt;thead&gt;</code>
+                        <br>
+                          &nbsp;&nbsp;<code>&lt;tr&gt;</code>
+                          <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;<code>&lt;th <span class="text-warning">scope="col"</span>&gt;</code>#<code>&lt;/th&gt;</code>
+                            <br>
+                           &nbsp;&nbsp;&nbsp;&nbsp;<code>&lt;th <span class="text-warning">scope="col"</span>&gt;</code>First<code>&lt;/th&gt;</code> <br>
+                           &nbsp;&nbsp;&nbsp;&nbsp;<code>&lt;th <span class="text-warning">scope="col"</span>&gt;</code>Last<code>&lt;/th&gt;</code> <br>
+                           &nbsp;&nbsp;&nbsp;&nbsp;<code>&lt;th <span class="text-warning">scope="col"</span>&gt;</code>Handle<code>&lt;/th&gt;</code> <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;<code>&lt;/tr&gt;</code><br>
+                        &nbsp;<code>&lt;/thead&gt;</code><br>
+                        &nbsp;<code>&lt;tbody&gt;</code><br>
+                            &nbsp;&nbsp;<code>&lt;tr&gt;</code><br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;<code>&lt;th <span class="text-warning">scope="row"</span>&gt;</code>1<code>&lt;/th&gt;</code> <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;<code>&lt;td&gt;</code>Mark<code>&lt;/td&gt;</code><br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;<code>&lt;td&gt;</code>Otto<code>&lt;/td&gt;</code><br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;<code>&lt;td&gt;</code>@mdo<code>&lt;/td&gt;</code><br>
+                          &nbsp;&nbsp;<code>&lt;/tr&gt;</code><br>
+                          &nbsp;&nbsp;<code>&lt;tr&gt;</code><br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;<code>&lt;th <span class="text-warning">scope="row"</span>&gt;</code>2<code>&lt;/th&gt;</code> <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;<code>&lt;td&gt;</code>Jacob<code>&lt;/td&gt;</code><br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;<code>&lt;td&gt;</code>Thornton<code>&lt;/td&gt;</code><br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;<code>&lt;td&gt;</code>@fat<code>&lt;/td&gt;</code><br>
+                          &nbsp;&nbsp;<code>&lt;/tr&gt;</code><br>
+                          &nbsp;&nbsp;<code>&lt;tr&gt;</code><br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;<code>&lt;th <span class="text-warning">scope="row"</span>&gt;</code>3<code>&lt;/th&gt;</code> <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;<code>&lt;td <span class="text-warning">colspan="2"</span>&gt;</code>Larry the Bird<code>&lt;/td&gt;</code><br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;<code>&lt;td&gt;</code>@twitter<code>&lt;/td&gt;</code><br>
+                          &nbsp;&nbsp;<code>&lt;/tr&gt;</code><br>
+                          &nbsp;<code>&lt;/tbody&gt;</code><br>
+                          <code>&lt;/table&gt;</code><br>
+            </div>
+            <div class="col-12 bg-light border border-black border-2">
+                <h3 class="p-3">Output:</h3>
+            </div>
+            <div class="col-10 p-3">
+                <table class="table table-responsive">
+                    <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">First</th>
+                        <th scope="col">Last</th>
+                        <th scope="col">Handle</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td colspan="2">Larry the Bird</td>
+                        <td>@twitter</td>
+                      </tr>
+                    </tbody>
+                  </table>
+            </div>
+         </div>
+    </div>
+
+    
+</body>
+</html>

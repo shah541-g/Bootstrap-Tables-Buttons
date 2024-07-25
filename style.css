@@ -1,0 +1,45 @@
+.hover-effect {
+    color: inherit; 
+  }
+
+.hover-effect:hover{
+    color: rgb(13,110,253);
+}
+.click-me{
+    cursor:pointer;
+}
+body{
+    background-color: dimgrey;
+}
+.row>*,.container-fluid{
+    padding-left: 0;
+    padding-right: 0;
+}
+@media(max-width:575px){
+    .container{
+        padding-left: calc(var(--bs-gutter-x)*1);
+        padding-right: calc(var(--bs-gutter-x)*1);
+    }
+}
+p,caption{
+    padding-left: calc(var(--bs-gutter-x)*1);
+    padding-right: calc(var(--bs-gutter-x)*1);   
+}
+.table{
+    margin-bottom: 0;
+}
+.btn{
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+}
+.btn{
+    margin-left: 0.5rem;
+}
+.colors>*{
+    min-width: 20%;
+}
+@media(max-width:352px){
+    .rem-me{
+        display: none;
+    }
+}

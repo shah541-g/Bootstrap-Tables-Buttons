@@ -1,0 +1,1119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Tables</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./style.css">
+
+
+</head>
+<body>
+    <div class="container-fluid mb-3">
+        <h1 class="p-3 text-white text-center bg-dark">Bootstrap Tables</h1>
+
+        <p class="lead text-center">Before starting this topic, you have to revise the tables, have a <a href="./tables.html" class="hover-effect" target="_blank">look <i class="fa-solid fa-arrow-right-to-bracket"></i></a></p>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12 bg-light border border-2 border-black table-responsive my-3">
+                <h2 class="p-3 fw-bold">
+                    Types of Accented Tables:
+                </h2>
+                <ol class="ms-3">
+                    <li>
+                        Striped Table
+                    </li>
+                    <li>
+                        Hoverable Table
+                    </li>
+                    <li>
+                        Active Table
+                    </li>
+                </ol>
+            </div>
+            <div class="col-12 bg-light border border-2 border-black table-responsive my-3">
+                
+                <h3 class="p-3 bg-success text-white text-center">
+                    Striped tables in Accented tables
+                </h3>
+                <p>These are those tables in which alternative rows are given opacity, the syntax for these kind of tables is <span class="text-success fw-bold">class="table table-striped"</span></p>
+                
+                <!-- On tables -->
+                <table class="table table-striped">
+                        <thead>
+                          <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">First</th>
+                            <th scope="col">Last</th>
+                            <th scope="col">Handle</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">2</th>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>@fat</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">3</th>
+                            <td colspan="2">Larry the Bird</td>
+                            <td>@twitter</td>
+                          </tr>
+                        </tbody>
+                </table>
+            </div>
+            <div class="col-12 bg-light border border-2 border-black table-responsive my-3">
+                
+                <h3 class="p-3 bg-success text-white text-center">
+                    Striped columns in accented tables
+                </h3>
+                <p>By default <span class="fw-bold">table-striped class</span> acts on rows not on columns, so in order to have striped columns, we'll use  <span class="text-success fw-bold">class="table table-striped-columns"</span></p>
+                
+                <!-- On tables -->
+                <table class="table table-striped-columns">
+                        <thead>
+                          <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">First</th>
+                            <th scope="col">Last</th>
+                            <th scope="col">Handle</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">2</th>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>@fat</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">3</th>
+                            <td colspan="2">Larry the Bird</td>
+                            <td>@twitter</td>
+                          </tr>
+                        </tbody>
+                </table>
+            </div>
+            <div class="col-12 bg-light border border-2 border-black table-responsive my-3">
+                
+                <div class="bg-secondary d-flex colors">
+                    <div class="bg-dark"></div>
+                    <div class="bg-success"></div>
+                    <h3 class="d-none d-sm-block mb-0 py-3 bg-primary text-white text-center">
+                        Colors in tables
+                    </h3>
+                    <h6 class="d-block d-sm-none mb-0 py-3 bg-primary text-white text-center">
+                        Colors in tables
+                    </h6>
+                    <div class="bg-danger"></div>
+                    <div class="bg-info"></div>
+                </div>
+                <p>There are still those standard colors we're using from starting</p>
+                <ol class="ml-3">
+                    <li><button role="button" class="btn btn-primary">Primary</button></li>
+                    <li><button role="button" class="btn btn-danger">danger</button></li>
+                    <li><button role="button" class="btn btn-info">info</button></li>
+                    <li><button role="button" class="btn btn-success">success</button></li>
+                    <li><button role="button" class="btn btn-dark">dark</button></li>
+                    <li><button role="button" class="btn btn-secondary">secondary</button></li>
+                </ol> 
+                    <p>and syntax for these colors is</p>
+                <ol class="ml-3">
+                    <li><span class="fw-bold text-primary">class="table table-Primary"</span></li>
+                    <li><span class="fw-bold text-danger">class="table table-danger"</span></li>
+                    <li><span class="fw-bold text-info">class="table table-info"</span></li>
+                    <li><span class="fw-bold text-success">class="table table-success"</span></li>
+                    <li><span class="fw-bold text-dark">class="table table-dark"</span></li>
+                    <li><span class="fw-bold text-secondary">class="table table-secondary"</span></li>
+                    <li><span class="fw-bold text-warning">class="table table-warning"</span></li>
+                </ol>
+            
+                
+                <!-- On tables -->
+                
+            </div>
+
+            <div class="col-12 bg-light border border-black border-2">
+                <h3 class="p-3 text-center">Unstriped Colorful Tables</h3>
+            </div>
+
+            <div class="col-12 bg-light border border-2 border-black table-responsive my-3">
+                               <p class="font-monospace text-center mb-0 text-bg-primary">table table-primary</p>
+                <!-- On tables -->
+                <table class="table table-primary">
+                        <thead>
+                          <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">First</th>
+                            <th scope="col">Last</th>
+                            <th scope="col">Handle</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">2</th>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>@fat</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">3</th>
+                            <td colspan="2">Larry the Bird</td>
+                            <td>@twitter</td>
+                          </tr>
+                        </tbody>
+                </table>
+            </div>
+
+            <div class="col-12 bg-light border border-black my-3 border-2 table-responsive">
+                <p class="font-monospace text-center mb-0 text-bg-danger">table table-danger</p>
+                <table class="table table-danger">
+                    <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">First</th>
+                        <th scope="col">Last</th>
+                        <th scope="col">Handle</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td colspan="2">Larry the Bird</td>
+                        <td>@twitter</td>
+                      </tr>
+                    </tbody>
+            </table>
+            </div>
+
+            
+
+            <div class="col-12 bg-light border border-2 border-black table-responsive my-3">
+                <p class="font-monospace text-center mb-0 text-bg-info">table table-info</p>
+                <!-- On tables -->
+                <table class="table table-info">
+                        <thead>
+                          <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">First</th>
+                            <th scope="col">Last</th>
+                            <th scope="col">Handle</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">2</th>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>@fat</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">3</th>
+                            <td colspan="2">Larry the Bird</td>
+                            <td>@twitter</td>
+                          </tr>
+                        </tbody>
+                </table>
+            </div>
+
+            <div class="col-12 bg-light border border-2 border-black table-responsive my-3">
+                <p class="font-monospace text-center mb-0 text-bg-success">table table-success</p>
+                <!-- On tables -->
+                <table class="table table-success">
+                        <thead>
+                          <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">First</th>
+                            <th scope="col">Last</th>
+                            <th scope="col">Handle</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">2</th>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>@fat</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">3</th>
+                            <td colspan="2">Larry the Bird</td>
+                            <td>@twitter</td>
+                          </tr>
+                        </tbody>
+                </table>
+            </div>
+
+
+            <div class="col-12 bg-light border border-2 border-black table-responsive my-3">
+                <p class="font-monospace text-center mb-0 text-bg-dark">table table-dark</p>
+                <!-- On tables -->
+                <table class="table table-dark">
+                        <thead>
+                          <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">First</th>
+                            <th scope="col">Last</th>
+                            <th scope="col">Handle</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">2</th>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>@fat</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">3</th>
+                            <td colspan="2">Larry the Bird</td>
+                            <td>@twitter</td>
+                          </tr>
+                        </tbody>
+                </table>
+            </div>
+
+            <div class="col-12 bg-light border border-2 border-black table-responsive my-3">
+                <p class="font-monospace text-center mb-0 text-bg-secondary">table table-secondary</p>
+                <!-- On tables -->
+                <table class="table table-secondary">
+                        <thead>
+                          <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">First</th>
+                            <th scope="col">Last</th>
+                            <th scope="col">Handle</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">2</th>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>@fat</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">3</th>
+                            <td colspan="2">Larry the Bird</td>
+                            <td>@twitter</td>
+                          </tr>
+                        </tbody>
+                </table>
+            </div>
+
+            <div class="col-12 bg-light border border-2 border-black table-responsive my-3">
+                <p class="font-monospace text-center mb-0 text-bg-warning">table table-warning</p>
+                <!-- On tables -->
+                <table class="table table-warning">
+                        <thead>
+                          <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">First</th>
+                            <th scope="col">Last</th>
+                            <th scope="col">Handle</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">2</th>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>@fat</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">3</th>
+                            <td colspan="2">Larry the Bird</td>
+                            <td>@twitter</td>
+                          </tr>
+                        </tbody>
+                </table>
+            </div>
+
+            <div class="col-12 bg-light border border-black border-2">
+                <h3 class="p-3 text-center">Striped Colorful Tables</h3>
+            </div>
+
+            <div class="col-12 bg-light border border-2 border-black table-responsive my-3">
+                            <p class="font-monospace text-center mb-0 text-bg-primary">table table-striped table-primary</p>
+            <!-- On tables -->
+            <table class="table table-striped table-primary">
+                    <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">First</th>
+                        <th scope="col">Last</th>
+                        <th scope="col">Handle</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td colspan="2">Larry the Bird</td>
+                        <td>@twitter</td>
+                    </tr>
+                    </tbody>
+            </table>
+            </div>
+
+            <div class="col-12 bg-light border border-black my-3 border-2 table-responsive">
+            <p class="font-monospace text-center mb-0 text-bg-danger">table table-striped table-danger</p>
+            <table class="table table-striped table-danger">
+                <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">First</th>
+                    <th scope="col">Last</th>
+                    <th scope="col">Handle</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td colspan="2">Larry the Bird</td>
+                    <td>@twitter</td>
+                </tr>
+                </tbody>
+            </table>
+            </div>
+
+
+
+            <div class="col-12 bg-light border border-2 border-black table-responsive my-3">
+            <p class="font-monospace text-center mb-0 text-bg-info">table table-striped table-info</p>
+            <!-- On tables -->
+            <table class="table table-striped table-info">
+                    <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">First</th>
+                        <th scope="col">Last</th>
+                        <th scope="col">Handle</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td colspan="2">Larry the Bird</td>
+                        <td>@twitter</td>
+                    </tr>
+                    </tbody>
+            </table>
+            </div>
+
+            <div class="col-12 bg-light border border-2 border-black table-responsive my-3">
+            <p class="font-monospace text-center mb-0 text-bg-success">table table-striped table-success</p>
+            <!-- On tables -->
+            <table class="table table-striped table-success">
+                    <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">First</th>
+                        <th scope="col">Last</th>
+                        <th scope="col">Handle</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td colspan="2">Larry the Bird</td>
+                        <td>@twitter</td>
+                    </tr>
+                    </tbody>
+            </table>
+            </div>
+
+
+            <div class="col-12 bg-light border border-2 border-black table-responsive my-3">
+            <p class="font-monospace text-center mb-0 text-bg-dark">table table-striped table-dark</p>
+            <!-- On tables -->
+            <table class="table table-striped table-dark">
+                    <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">First</th>
+                        <th scope="col">Last</th>
+                        <th scope="col">Handle</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td colspan="2">Larry the Bird</td>
+                        <td>@twitter</td>
+                    </tr>
+                    </tbody>
+            </table>
+            </div>
+
+            <div class="col-12 bg-light border border-2 border-black table-responsive my-3">
+            <p class="font-monospace text-center mb-0 text-bg-secondary">table table-striped table-secondary</p>
+            <!-- On tables -->
+            <table class="table table-striped table-secondary">
+                    <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">First</th>
+                        <th scope="col">Last</th>
+                        <th scope="col">Handle</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td colspan="2">Larry the Bird</td>
+                        <td>@twitter</td>
+                    </tr>
+                    </tbody>
+            </table>
+            </div>
+
+            <div class="col-12 bg-light border border-2 border-black table-responsive my-3">
+            <p class="font-monospace text-center mb-0 text-bg-warning">table table-striped table-warning</p>
+            <!-- On tables -->
+            <table class="table table-striped table-warning">
+                    <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">First</th>
+                        <th scope="col">Last</th>
+                        <th scope="col">Handle</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td colspan="2">Larry the Bird</td>
+                        <td>@twitter</td>
+                    </tr>
+                    </tbody>
+            </table>
+            </div>
+
+            
+
+            <div class="col-12 bg-light border border-2 border-black table-responsive my-3">
+                
+                <h3 class="p-3 bg-danger text-white text-center">
+                    Hoverable Tables
+                </h3>
+                <p>
+                    Hoverable Tables are mostly used to provide a visual respose to the user, it can also be used for editable tables and also in large datasets for data comparison. The syntax for this is <span class="fw-bold text-danger">class="table table-hover"</span>
+                </p>
+                
+                <!-- On tables -->
+                <table class="table table-hover">
+                        <thead>
+                          <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">First</th>
+                            <th scope="col">Last</th>
+                            <th scope="col">Handle</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">2</th>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>@fat</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">3</th>
+                            <td colspan="2">Larry the Bird</td>
+                            <td>@twitter</td>
+                          </tr>
+                        </tbody>
+                </table>
+            </div>
+
+            <div class="col-12 bg-light border border-2 border-black table-responsive my-3">
+                
+                <h3 class="p-3 bg-primary text-white text-center">
+                    Active tables
+                </h3>
+
+                <p>This utility class is mainly used: </p>
+                <ol class="ml-3">
+                    <li>To highlight that specific row or cell of the table which is being recently clicked.</li>
+                    <li>To indicate cells of the row from which the user is navigating using keyboard.</li>
+                    <li>To indicate specific cells in dataset that meet a specific condition.</li>
+                    <li>To represent differnt entities in row.</li>
+                </ol>
+                <p>Its's syntax is: <span class="fw-bold text-primary">class="table table-active"</span></p>
+                
+
+                <table class="table table-bordered border-black">
+                    <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">First</th>
+                        <th scope="col">Last</th>
+                        <th scope="col">Handle</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td class="table-active">Otto</td>
+                        <td>@mdo</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td colspan="2">Larry the Bird</td>
+                        <td  class=" table-active">@twitter</td>
+                      </tr>
+                    </tbody>
+            </table>
+            </div>
+
+            <div class="col-12 bg-light border border-2 border-black table-responsive my-3">
+                
+                <h3 class="p-3 bg-secondary text-white text-center">
+                    Borders on Tables
+                </h3>
+                <p>
+                    You can also add border on a table to distinguish cells for a colorblind person by the use of <span class="fw-bold text-secondary">class="table table-bordered"</span>
+                </p>
+                
+                <!-- On tables -->
+                <table class="table table-hover table-bordered border-black">
+                        <thead>
+                          <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">First</th>
+                            <th scope="col">Last</th>
+                            <th scope="col">Handle</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">2</th>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>@fat</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">3</th>
+                            <td colspan="2">Larry the Bird</td>
+                            <td>@twitter</td>
+                          </tr>
+                        </tbody>
+                </table>
+            </div>
+
+            <div class="col-12 bg-light border border-2 border-black table-responsive my-3">
+                
+                <h3 class="p-3 bg-warning text-black text-center">
+                    Borderless Tables
+                </h3>
+                <p>
+                    Similarly, for no borders use <span class="fw-bold text-dark">class="table table-borderless"</span>
+                </p>
+                
+                <!-- On tables -->
+                <table class="table table-hover table-borderless">
+                        <thead>
+                          <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">First</th>
+                            <th scope="col">Last</th>
+                            <th scope="col">Handle</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">2</th>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>@fat</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">3</th>
+                            <td colspan="2">Larry the Bird</td>
+                            <td>@twitter</td>
+                          </tr>
+                        </tbody>
+                </table>
+            </div>
+
+            <div class="col-12 bg-light border border-2 border-black table-responsive my-3">
+                
+                <h3 class="p-3 bg-primary text-white text-center">
+                    Small Tables
+                </h3>
+                <p>
+                   If you want to remove all the paddings from within the cells use <span class="fw-bold text-primary">class="table table-sm"</span>
+                </p>
+                
+                <!-- On tables -->
+                <table class="table table-sm">
+                        <thead>
+                          <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">First</th>
+                            <th scope="col">Last</th>
+                            <th scope="col">Handle</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">2</th>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>@fat</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">3</th>
+                            <td colspan="2">Larry the Bird</td>
+                            <td>@twitter</td>
+                          </tr>
+                        </tbody>
+                </table>
+            </div>
+
+            <div class="col-12 bg-light my-3 table-responsive">
+                
+                <h3 class="p-3 bg-secondary text-white text-center">
+                    Table Group Divider
+                </h3>
+                <p>
+                    The main use of table group divider is to visually divide a table into two sections, by drawing a line. <span class="fw-bold text-secondary">class="table-group-divider"</span>
+                 </p>
+                
+                <!-- On tables -->
+                <table class="table table-hover">
+                        <thead>
+                          <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">First</th>
+                            <th scope="col">Last</th>
+                            <th scope="col">Handle</th>
+                          </tr>
+                        </thead>
+                        <tbody class="table-group-divider">
+                          <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">2</th>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>@fat</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">3</th>
+                            <td colspan="2">Larry the Bird</td>
+                            <td>@twitter</td>
+                          </tr>
+                        </tbody>
+                </table>
+            </div>
+
+            <div class="col-12 bg-light border border-2 border-black table-responsive my-3  ">
+                
+                <h3 class="p-3 bg-success text-white text-center">
+                    Table and rows alignment
+                </h3>
+                <p>Alignment is along Y axis, so in order to align content within a table, or within a head of table, or within body of a table, or within a cell you can align it along y axis on three places <span class="fw-bold text-primary">bottom, top and center</span></p>
+                
+                <!-- On tables -->
+                <div class="table-responsive">
+                        <table class="table table-bordered border-black">
+                                <thead>
+                                  <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">First</th>
+                                    <th scope="col">Last</th>
+                                    <th scope="col">Handle</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr class="align-middle">
+                                    <th scope="row"><span class="fw-bold text-primary">align-middle</span></th>
+                                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, a esse? Fugit reiciendis dolor officiis magnam odio molestiae vero praesentium sint dignissimos modi!</td>
+                                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, provident sint praesentium soluta nam debitis deserunt delectus quos at dignissimos voluptates nemo quaerat magnam minus blanditiis eveniet quasi ratione quis. Tempore cupiditate ad molestias iste! Aut facilis, repudiandae unde assumenda, natus libero esse voluptate, consectetur ipsam suscipit molestias delectus eveniet?</td>
+                                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. At labore error assumenda suscipit unde magni molestias, amet nobis repudiandae. Laboriosam sed, mollitia, provident quia ipsa libero quidem perspiciatis nostrum commodi dignissimos quisquam minima cupiditate omnis eum eius est sit? Iste quibusdam saepe dolorum voluptas harum facilis pariatur natus eaque facere tenetur a non tempora distinctio earum sint expedita veniam consequuntur cumque perspiciatis iusto fugit, id ipsa? Odit modi est unde accusantium culpa tempora voluptatibus dolores? Facilis officiis necessitatibus aspernatur quidem nemo, voluptatibus esse unde aut maiores id? Ratione neque, debitis eos necessitatibus, id iure sequi, reiciendis qui laboriosam repudiandae quos!</td>
+                                  </tr>
+                                  <tr class="align-bottom">
+                                    <th scope="row"><span class="fw-bold text-primary">align-bottom</span></th>
+                                    <td>lorem</td>
+                                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis pariatur cupiditate earum quis officia, facere molestias quas harum optio porro. Iusto obcaecati necessitatibus possimus, similique unde suscipit corrupti nemo. Possimus voluptates ullam consequuntur iure et modi nisi tempore nulla quibusdam.</td>
+                                    <td>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis pariatur nemo nisi, possimus facere dolorem, quos dolore quam accusamus ipsam in repudiandae illum.</td>
+                                  </tr>
+                                  <tr class="align-top">
+                                    <th scope="row"><span class="fw-bold text-primary">align-top</span></th>
+                                    <td colspan="2">Larry the Bird</td>
+                                    <td>@twitter</td>
+                                  </tr>
+                                </tbody>
+                        </table>
+                    
+                </div>
+            </div>
+
+            <div class="col-12 bg-secondary border border-2 border-black my-3 p-3">
+                
+                <a href="./nesting-in-tables.html" target="_blank" class=" h3 bg-secondary text-white text-center">
+                    Nesting in Tables (click me)
+                </a>
+                
+            </div>
+
+            <div class="col-12 bg-light border border-2 border-black table-responsive my-3">
+                
+                <h3 class="p-3 bg-primary text-white text-center">
+                    Colors on specific sections of table
+                </h3>
+                
+                <!-- On tables -->
+                
+                        <table class="table ">
+                                <thead>
+                                  <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">First</th>
+                                    <th scope="col">Last</th>
+                                    <th scope="col">Handle</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <th scope="row">1</th>
+                                    <td>Mark</td>
+                                    <td>Otto</td>
+                                    <td>@mdo</td>
+                                  </tr>
+                                  <tr class="table-dark">
+                                    <th scope="row">2</th>
+                                    <td>Jacob</td>
+                                    <td>Thornton</td>
+                                    <td>@fat</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">3</th>
+                                    <td colspan="2" class="">Larry the Bird</td>
+                                    <td>@twitter</td>
+                                  </tr>
+                                </tbody>
+                        </table>
+                    
+                
+            </div>
+            
+            <div class="col-12 bg-light border border-2 border-black table-responsive my-3">
+                
+                <h3 class="p-3 bg-danger text-white text-center">
+                    Captions on table
+                </h3>
+                <p>Captions are used to provide little details about a table, its syntax is: <code class="fw-bold">&lt;caption&gt;&lt;/caption&gt;</code></p>
+                <!-- On tables -->
+                <table class="table ">
+                            <caption>My Professor</caption>
+                            
+                                <thead>
+                                  <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">First</th>
+                                    <th scope="col">Last</th>
+                                    <th scope="col">Handle</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <th scope="row">1</th>
+                                    <td>Mark</td>
+                                    <td>Otto</td>
+                                    <td>@mdo</td>
+                                  </tr>
+                                  <tr class="table-dark">
+                                    <th scope="row">2</th>
+                                    <td>Jacob</td>
+                                    <td>Thornton</td>
+                                    <td>@fat</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">3</th>
+                                    <td colspan="2" class="">Larry the Bird</td>
+                                    <td>@twitter</td>
+                                  </tr>
+                                </tbody>
+                        </table>
+                        <hr>
+                        <table class="table">
+                            <caption class="caption-top">My Professor</caption>
+                            
+                                <thead>
+                                  <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">First</th>
+                                    <th scope="col">Last</th>
+                                    <th scope="col">Handle</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <th scope="row">1</th>
+                                    <td>Mark</td>
+                                    <td>Otto</td>
+                                    <td>@mdo</td>
+                                  </tr>
+                                  <tr class="table-dark">
+                                    <th scope="row">2</th>
+                                    <td>Jacob</td>
+                                    <td>Thornton</td>
+                                    <td>@fat</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">3</th>
+                                    <td colspan="2" class="">Larry the Bird</td>
+                                    <td>@twitter</td>
+                                  </tr>
+                                </tbody>
+                        </table>
+
+                        
+            </div>
+
+            <div class="col-12 bg-light border border-2 border-black table-responsive my-3">
+                
+                <h3 class="p-3 bg-success text-white text-center">
+                    Responsiveness of table
+                </h3>
+                <p>Table responsiveness is one of the mejor issue for small screens in order to achieve this we use <span class="fw-bold text-success">table-responsive</span></p>
+
+                <table class="table">
+                    <caption>My Professor</caption>
+                    
+                        <thead>
+                          <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">First</th>
+                            <th scope="col">Last</th>
+                            <th scope="col">Handle</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                          </tr>
+                          <tr class="table-dark">
+                            <th scope="row">2</th>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>@fat</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">3</th>
+                            <td colspan="2" class="">Larry the Bird</td>
+                            <td>@twitter</td>
+                          </tr>
+                        </tbody>
+                </table>
+                
+                <!-- On tables -->
+                
+                   
+                    
+                
+            </div>
+
+            
+
+        </div>
+    </div>
+
+    <div class="container-fluid ">
+        <h1 class="p-3 mb-0 text-bg-dark text-center">
+            Buttons<a href="./buttons.html" target="_blank"> Click me</a>
+        </h1>
+    </div>
+
+    <script src="https://kit.fontawesome.com/1ea7ed790e.js" crossorigin="anonymous"></script>
+</body>
+</html>
